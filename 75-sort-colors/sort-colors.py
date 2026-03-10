@@ -4,7 +4,7 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         ##return nums.sort()
-        #Dutch flag algorithm
+        #Dutch national flag algorithm
         low = 0
         mid = 0
         high = len(nums) - 1
@@ -18,6 +18,8 @@ class Solution:
             else:
                 nums[mid],nums[high] = nums[high],nums[mid]
                 high -= 1
+
+                    #T O(n) and S O(1)
 
     
 
